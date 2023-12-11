@@ -1,4 +1,4 @@
-module github.com/nullboundary/glfont
+module github.com/iivdev/glfont
 
 go 1.18
 
