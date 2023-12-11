@@ -68,6 +68,7 @@ func compileShader(source string, shaderType uint32) (uint32, error) {
 }
 
 var fragmentFontShader = `#version 300 es
+precision lowp float;
 in vec2 fragTexCoord;
 out vec4 outputColor;
 
@@ -81,7 +82,7 @@ void main()
 }` + "\x00"
 
 var vertexFontShader = `#version 300 es
-
+precision lowp float;
 //vertex position
 in vec2 vert;
 
